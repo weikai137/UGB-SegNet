@@ -1,0 +1,268 @@
+{
+  "seed": 42,
+  "busi_archive_sha256": "b2ce09f6063a31a73f628b6a6ee1245187cbaec225e93e563735691d68654de7",
+  "protocol": "BUSI lesion-only train/val/test; BUS-UCLM external-only; binary lesion union",
+  "split_unit": "exact decoded grayscale image groups; BUSI patient IDs unavailable",
+  "errors": [],
+  "notes": [
+    "Original data is not modified; multi-lesion masks are merged with logical OR.",
+    "BUSI normal images are audited but excluded to match the lesion-only primary task.",
+    "Duplicate inputs stay in one split. No patient-level independence claim is possible for BUSI.",
+    "BUS-UCLM is never used for training, threshold selection or model selection.",
+    "Internal test and external outputs must be reported separately.",
+    "Pixel spacing is unavailable; distances are pixels, not millimetres.",
+    "Data preparation and CPU validation are not GPU training results.",
+    "13 BUS-UCLM cases excluded for incompatible image/mask geometry; originals preserved."
+  ],
+  "BUSI": {
+    "source_images": {
+      "benign": 437,
+      "malignant": 210,
+      "normal": 133
+    },
+    "source_masks": {
+      "benign": 454,
+      "malignant": 211,
+      "normal": 133
+    },
+    "retained_lesion_images": 647,
+    "multi_mask_images": 17,
+    "split_counts": {
+      "test": 129,
+      "train": 453,
+      "val": 65
+    },
+    "class_by_split": {
+      "train": {
+        "benign": 306,
+        "malignant": 147
+      },
+      "val": {
+        "benign": 44,
+        "malignant": 21
+      },
+      "test": {
+        "benign": 87,
+        "malignant": 42
+      }
+    },
+    "duplicate_groups": [
+      {
+        "ids": [
+          "busi_benign_0433",
+          "busi_malignant_0145"
+        ],
+        "split": "train",
+        "classes": [
+          "benign",
+          "malignant"
+        ],
+        "annotation_variants": 2
+      }
+    ]
+  },
+  "BUS-UCLM": {
+    "images": 670,
+    "class_counts": {
+      "benign": 170,
+      "normal": 410,
+      "malignant": 90
+    },
+    "mask_palette_pixels": {
+      "(0, 0, 0)": 337204746,
+      "(0, 255, 0)": 6061296,
+      "(255, 0, 0)": 4287078
+    },
+    "source_images": 683,
+    "exclusions": [
+      {
+        "source": "HESN_000.png",
+        "class": "normal",
+        "reason": "image/mask dimension mismatch",
+        "image_shape": [
+          489,
+          620
+        ],
+        "mask_shape": [
+          606,
+          856
+        ]
+      },
+      {
+        "source": "HESN_001.png",
+        "class": "normal",
+        "reason": "image/mask dimension mismatch",
+        "image_shape": [
+          489,
+          789
+        ],
+        "mask_shape": [
+          606,
+          856
+        ]
+      },
+      {
+        "source": "HESN_002.png",
+        "class": "benign",
+        "reason": "image/mask dimension mismatch",
+        "image_shape": [
+          468,
+          790
+        ],
+        "mask_shape": [
+          606,
+          856
+        ]
+      },
+      {
+        "source": "HESN_003.png",
+        "class": "benign",
+        "reason": "image/mask dimension mismatch",
+        "image_shape": [
+          485,
+          792
+        ],
+        "mask_shape": [
+          606,
+          856
+        ]
+      },
+      {
+        "source": "HESN_004.png",
+        "class": "benign",
+        "reason": "image/mask dimension mismatch",
+        "image_shape": [
+          483,
+          792
+        ],
+        "mask_shape": [
+          606,
+          856
+        ]
+      },
+      {
+        "source": "HESN_005.png",
+        "class": "benign",
+        "reason": "image/mask dimension mismatch",
+        "image_shape": [
+          486,
+          787
+        ],
+        "mask_shape": [
+          606,
+          856
+        ]
+      },
+      {
+        "source": "HESN_006.png",
+        "class": "normal",
+        "reason": "image/mask dimension mismatch",
+        "image_shape": [
+          487,
+          612
+        ],
+        "mask_shape": [
+          606,
+          856
+        ]
+      },
+      {
+        "source": "HESN_007.png",
+        "class": "normal",
+        "reason": "image/mask dimension mismatch",
+        "image_shape": [
+          489,
+          620
+        ],
+        "mask_shape": [
+          606,
+          856
+        ]
+      },
+      {
+        "source": "HESN_008.png",
+        "class": "normal",
+        "reason": "image/mask dimension mismatch",
+        "image_shape": [
+          489,
+          616
+        ],
+        "mask_shape": [
+          606,
+          856
+        ]
+      },
+      {
+        "source": "HESN_009.png",
+        "class": "normal",
+        "reason": "image/mask dimension mismatch",
+        "image_shape": [
+          487,
+          621
+        ],
+        "mask_shape": [
+          606,
+          856
+        ]
+      },
+      {
+        "source": "HESN_010.png",
+        "class": "normal",
+        "reason": "image/mask dimension mismatch",
+        "image_shape": [
+          486,
+          608
+        ],
+        "mask_shape": [
+          606,
+          856
+        ]
+      },
+      {
+        "source": "HESN_011.png",
+        "class": "normal",
+        "reason": "image/mask dimension mismatch",
+        "image_shape": [
+          486,
+          637
+        ],
+        "mask_shape": [
+          606,
+          856
+        ]
+      },
+      {
+        "source": "HESN_012.png",
+        "class": "normal",
+        "reason": "image/mask dimension mismatch",
+        "image_shape": [
+          488,
+          616
+        ],
+        "mask_shape": [
+          606,
+          856
+        ]
+      }
+    ],
+    "metadata_sha256": "a9d5356f0639caa1bafa5d46de58c70e81894c39ddb4feff10a7858d87d9e91c",
+    "BUSI_exact_overlap": 0,
+    "flags": {
+      "doppler": {
+        "No": 634,
+        "Yes": 35,
+        "Y": 1
+      },
+      "marks": {
+        "Yes": 152,
+        "No": 518
+      },
+      "combined": {
+        "No": 664,
+        "Yes": 6
+      }
+    }
+  },
+  "manifest_sha256": "26e5f1d6d51b5ac36b338d1968df74f9024532c54f250417e8a609c2704a4387",
+  "source_note": "Dataset files remain local; machine-specific source path omitted from Git publication."
+}

@@ -5,3 +5,6 @@ figures/
 __pycache__/
 *.pyc
 *.pth
+.ipynb_checkpoints/
+*.tmp
+*.zip

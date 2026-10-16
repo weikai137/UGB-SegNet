@@ -1,0 +1,13 @@
+__pycache__/
+.ipynb_checkpoints/
+.cache/
+runs/
+results/
+reports/
+data/prepared/
+_qa_work/
+*.tmp
+*.zip
+*.pth
+*.pt
+*.ckpt

@@ -1,0 +1,12 @@
+{
+  "commit": "20c8e4ea20691a49dd07c65cd1e3f44ef3eff2a4",
+  "repository": "https://github.com/taukiralam007/UGB-SegNet",
+  "files": {
+    "verify.py": "502d063f26ec3c37077c214a037fc5e4a7dcc822bac4fe0c8b18859ac75c2031",
+    "README.md": "5a7ea1643bada06a03ab13001729255ae8fc32591e1424a360bb146dfaac3751",
+    ".gitignore": "b51286ba3d9fc8c62bba789d28aee5e05313b5ef4779229d3b268fa42a1423c7",
+    "run_5fold_cv.py": "16eee5dbba3479debc9f5af166745afbaf588b67bb7b483814aebd6b8f5ab7f1",
+    "ugbnet_segmentation_improved.py": "41b4f67bb36383e6e78f574661a84144b2c4cf5c2b1639831521740202389c69",
+    "requirements.txt": "28ddee41b50a8ec7f1cab204243325481d49f2c0f88da99e2ad7ec836f671881"
+  }
+}

@@ -1,0 +1,11 @@
+* text=auto eol=lf
+*.sh text eol=lf
+*.py text eol=lf
+*.ipynb text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+# Preserve the frozen manifest's original bytes, including CRLF, for its SHA-256.
+data/manifest.csv -text
+data/splits_final.json -text
+*.pth binary
+*.png binary

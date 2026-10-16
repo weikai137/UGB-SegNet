@@ -1,5 +1,11 @@
 # UGB-SegNet: Uncertainty-Guided Breast Segmentation Network
 
+## AutoDL notebook workflow
+
+The [BUSI_UGBSegNet](BUSI_UGBSegNet/README.md) directory adds a manual conda + VS Code notebook workflow using the pinned upstream model and loss, with resumable training and native-resolution evaluation. Start with [BUSI_UGBSegNet.ipynb](BUSI_UGBSegNet/BUSI_UGBSegNet.ipynb).
+
+This workflow uses a frozen 453/65/129 split aligned with a local nnU-Net experiment. It does not claim to reproduce the upstream five-fold or published test scores. Dataset images, pretrained/trained weights, runtime outputs, and upload archives are kept out of Git; see the workflow README for data setup.
+
 **PhD Dissertation — Feng Chia University, 2026**  
 **Author:** Taukir Alam  
 **Supervisor:** Professor Fang-Rong Hsu  
